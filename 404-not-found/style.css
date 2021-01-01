@@ -40,6 +40,10 @@ button {
   font-family: "Space Mono", monospace;
 }
 
+footer {
+  text-align: center;
+}
+
 @media (min-width: 1200px) {
   .notFound {
     display: flex;
@@ -53,5 +57,10 @@ button {
 
   .notFound__image {
     margin-top: 4rem;
+  }
+
+  footer {
+    margin-left: 30rem;
+    margin-top: 5rem;
   }
 }
