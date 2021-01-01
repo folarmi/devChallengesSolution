@@ -1,0 +1,33 @@
+img {
+  /* width: 197.42px;
+  height: 289.68px; */
+  width: 6rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.teamPage__gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+/* .teamPage__upside {
+  transform: rotate(-90deg);
+  margin-left: 5rem;
+  font-family: PT Serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  height: 10.99999427795411px;
+  width: 130.00000000000014px;
+  left: 175px;
+  top: 318px;
+} */

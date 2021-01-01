@@ -1,0 +1,57 @@
+body {
+  font-family: "Space Mono";
+  margin-left: 1rem;
+}
+
+h3 {
+  font-family: "Inconsolata", monospace;
+}
+
+.notFound__image {
+  width: 20rem;
+  height: 20rem;
+  margin-left: 1rem;
+}
+
+.notFound__content {
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  color: #333333;
+  font-weight: bold;
+  line-height: 71px;
+  font-size: 45px;
+}
+
+p {
+  list-style: 26.66px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Space Mono", monospace;
+}
+
+@media (min-width: 1200px) {
+  .notFound {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  p {
+    max-width: 300px;
+    margin-bottom: 4rem;
+  }
+
+  .notFound__image {
+    margin-top: 4rem;
+  }
+}
