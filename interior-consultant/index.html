@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior-consultant</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/014a14165b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <div class="interior">
+      <p class="interior__logo">this interior</p>
+
+      <!-- The overlay -->
+      <div class="interior__overlay" id="myNav">
+        <!-- Button to close the overlay navigation -->
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <nav class="interior__header">
+          <!-- Overlay content -->
+
+          <div class="interior__navItems">
+            <ul class="interior-nav">
+              <li>Home</li>
+              <li>Collection</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <!-- <img src="" alt="" /> -->
+        </nav>
+      </div>
+
+      <i class="fas fa-bars" onclick="openNav()"></i>
+
+      <div class="interior__flexContainer">
+        <div class="interior__content">
+          <h1>Modern interior</h1>
+          <p class="interior__text">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <p class="interior__read">
+            Read more
+            <span><i class="fas fa-long-arrow-alt-right"></i></span>
+          </p>
+        </div>
+
+        <section class="interior__gallery box">
+          <div class="interior__banner">
+            <img src="./photo1.png" alt="" />
+          </div>
+
+          <div class="interior__inset">
+            <div class="interior__card">
+              <div class="interior__card__profile">
+                <img src="./photo2.png" alt="" />
+                <div class="interior__profileInfo">
+                  <p>Aliza Webber</p>
+                  <small>Interior designer</small>
+                </div>
+              </div>
+              <div class="interior__card__content">
+                <h3>Designed in 2020 by Aliza Webber</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
