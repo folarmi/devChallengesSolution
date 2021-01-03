@@ -21,8 +21,11 @@
 
   <body>
     <div class="interior">
-      <p class="interior__logo">this interior</p>
-
+      <div class="interior__flex">
+        <p class="interior__logo">this interior</p>
+        <span style="font-size:30px;cursor:pointer;margin-top:1rem" onclick="openNav()">&#9776; </span>
+    </div>
+    
       <!-- The overlay -->
       <div class="interior__overlay" id="myNav">
         <!-- Button to close the overlay navigation -->
@@ -42,11 +45,9 @@
               <li>Contact</li>
             </ul>
           </div>
-          <!-- <img src="" alt="" /> -->
+        </div>
         </nav>
-      </div>
-
-      <i class="fas fa-bars" onclick="openNav()"></i>
+    
 
       <div class="interior__flexContainer">
         <div class="interior__content">

@@ -11,21 +11,16 @@ body {
   color: white;
   overflow: hidden;
 }
-/* 
-.interior-nav {
-  display: none;
-} */
 
 .interior__read > span {
   color: #ffffff;
 }
 
-.interior__navItems {
+/* .interior__navItems {
   display: flex;
-}
+} */
 
 .fa-bars:before {
-  margin-left: 18rem;
   margin-top: 5rem;
 }
 
@@ -38,6 +33,7 @@ body {
   text-transform: uppercase;
   border: 1px solid #ffffff;
   width: 5.5rem;
+  margin-right: 13rem;
 }
 
 .interior__content > h1 {
@@ -53,6 +49,10 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 17.07px;
+}
+
+.interior__flex {
+  display: flex;
 }
 
 /* overlay styles */
@@ -112,11 +112,7 @@ ul {
   width: 20rem;
   height: 20rem;
   object-fit: contain;
-  margin: 0 2rem;
-}
-
-.fas .fa-bars {
-  margin-left: 7rem;
+  margin-left: 1rem;
 }
 
 .interior__inset {
@@ -139,7 +135,6 @@ ul {
 .interior__card__profile {
   display: flex;
   margin-top: 2rem;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -208,7 +203,7 @@ ul {
     margin-top: 2rem;
   }
 
-  .fa-bars::before {
+  .interior__flex > span {
     display: none;
   }
 
