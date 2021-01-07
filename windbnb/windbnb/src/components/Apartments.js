@@ -9,14 +9,13 @@ function Apartments() {
   const [location, setLocation] = useState("Helsinki");
   const [guests, setGuests] = useState("4");
 
-  const whatValue = (e) => {
+  const filterButton = (e) => {
     e.preventDefault();
 
-    console.log(location, guests);
     const result = apartments
       .filter((apartment) => apartment.city === location)
       .filter((apartment) => apartment.maxGuests === Number(guests));
-    console.log(result);
+
     setApartmentsToDisplay(result);
   };
 
@@ -37,11 +36,6 @@ function Apartments() {
 
   return (
     <div>
-      <section className="apartments">
-        <h1>Stays in Finland</h1>
-        <p>12+ stays</p>
-      </section>
-
       <div className="apartment__filter">
         <form action="">
           <label htmlFor="location"></label>
@@ -69,9 +63,13 @@ function Apartments() {
             <option value="5">5 guests</option>
             <option value="10">10 guests</option>
           </select>
-
-          <button onClick={whatValue}>search</button>
+          <button onClick={filterButton}>search</button>
         </form>
+
+        <section className="apartments">
+          <h1>Stays in Finland</h1>
+          <p>12+ stays</p>
+        </section>
       </div>
 
       <div className="apartments__flexContainer">

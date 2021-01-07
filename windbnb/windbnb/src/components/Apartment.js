@@ -2,7 +2,7 @@ import React from "react";
 // import info from "../Stay";
 // import StarRateOutlinedIcon from "@material-ui/icons/StarRateOutlined";
 
-function Apartment({ photo, superhost, type, beds, rating, title }) {
+function Apartment({ photo, superHost, type, beds, rating, title }) {
   //   const [apart, setApart] = useState(info);
   //   console.log(apart);
   return (
@@ -11,7 +11,7 @@ function Apartment({ photo, superhost, type, beds, rating, title }) {
         <div className="apartment__card">
           <img src={photo} alt="" />
           <div className="apartment__info">
-            <button>super host</button>
+            {superHost ? <button>super host</button> : ""}
             <small>{type}</small>
             <small>{beds} beds</small>
             <small id="apartment__rating">✡ {rating}</small>
