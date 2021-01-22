@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/014a14165b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>checkout</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <main class="checkout">
+      <div class="checkout__product">
+        <section class="checkout__section">
+          <div class="checkout__image">
+            <img src="photo1.png" alt="" />
+          </div>
+
+          <div class="checkout__details">
+            <aside>
+              <p class="product__title">Vintage Backbag</p>
+              <p class="product__price">
+                $54.99 <span><small>$94.99</small></span>
+              </p>
+            </aside>
+
+            <div class="checkout__quantity">
+              <span><i class="fas fa-minus quantity__button"></i></span> 1
+              <span><i class="fas fa-plus quantity__button plus"></i></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="checkout__section checkout__border">
+          <div class="checkout__image">
+            <img src="photo2.png" alt="" />
+          </div>
+
+          <div class="checkout__details">
+            <aside>
+              <p class="product__title">Levi Shoes</p>
+              <p class="product__price">
+                $74.99 <span><small>$124.99</small></span>
+              </p>
+            </aside>
+
+            <div class="checkout__quantity">
+              <span><i class="fas fa-minus quantity__button"></i></span> 1
+              <span><i class="fas fa-plus quantity__button plus"></i></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="shipping">
+          <div class="flex checkout__shipping checkout__border">
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+
+          <div class="flex checkout__total">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="checkout__form">
+        <section class="checkout__contact">
+          <h3>Contact information</h3>
+
+          <form>
+            <label for="E-mail">Email</label><br />
+            <i class="fas fa-envelope icon"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+            />
+            <br />
+
+            <label for="Phone"> Phone </label><br />
+            <i class="fas fa-phone-alt icon"></i>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone..."
+            />
+          </form>
+        </section>
+
+        <section class="checkout__shipping">
+          <h3>Shipping address</h3>
+
+          <form>
+            <label for="Full name">Full name</label><br />
+            <i class="fas fa-user-circle icon"></i>
+            <input type="text" name="fullname" placeholder="Rodney Cotton" />
+            <br />
+
+            <label for="Address">Address</label><br />
+            <i class="fas fa-home icon"></i>
+            <input type="text" name="address" placeholder="Your address.." />
+            <br />
+
+            <label for="City">City</label><br />
+            <i class="fas fa-city icon"></i>
+            <input type="text" name="city" placeholder="Your city.." />
+            <br />
+
+            <div class="form__flex">
+              <div class="form__input">
+                <label for="country">Country</label><br />
+                <i class="fas fa-city icon"></i>
+                <input
+                  type="text"
+                  name="country"
+                  placeholder="Your country.."
+                />
+                <br />
+              </div>
+
+              <div class="form__input">
+                <label for="Postal code">Postal code</label><br />
+                <i class="fas fa-mail-bulk icon"></i>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Your postal code.."
+                />
+                <br />
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <div class="checkout__checkbox">
+          <input type="checkbox" />
+          <label for="info">Save this information for next time</label>
+        </div>
+
+        <button>Continue</button>
+      </div>
+    </main>
+  </body>
+</html>
